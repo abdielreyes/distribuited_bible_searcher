@@ -100,7 +100,7 @@ public class WebServer {
         }catch (IOException e) {
             e.printStackTrace();
         }   
-
+        System.out.println(String.format("%s : %s", bodyString,count));
         return String.format("%s : %s", bodyString,count).getBytes();
     }
     private void handleTaskRequest(HttpExchange exchange) throws IOException {
